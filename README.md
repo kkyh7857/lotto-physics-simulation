@@ -1,2 +1,17 @@
-# lotto-physics-simulation
-This repository is a basic model for generating lottery numbers by referencing fluid dynamics and quantum mechanics.
+# 로또 물리 시뮬레이션
+
+이 프로젝트는 물리 법칙과 유체역학을 적용한 로또 추첨 시뮬레이션입니다.
+
+## 기능
+- 45개의 로또 공이 원형 통 안에서 물리 법칙에 따라 움직입니다
+- 공들 간의 충돌, 바람의 영향, 난류, 공기 저항 등이 구현되어 있습니다
+- 6개의 공을 무작위로 추첨합니다
+
+## 실행 방법
+1. Python과 Pygame이 설치되어 있어야 합니다
+2. Pygame이 없다면 `pip install pygame`으로 설치하세요
+3. `python lotto_simulation.py`로 실행하세요
+
+## 조작법
+- Space 키: 시작/일시정지
+- R 키: 재시작
