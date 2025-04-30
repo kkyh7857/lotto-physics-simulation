@@ -23,15 +23,15 @@ pygame.display.set_caption("로또 물리 시뮬레이션")
 clock = pygame.time.Clock()
 
 # 물리적 상수들
-CONTAINER_RADIUS = 350  # 로또 통의 반지름 (픽셀)
-BALL_RADIUS = 15        # 로또 공의 반지름 (픽셀)
-BALL_COUNT = 45         # 로또 공의 개수
-GRAVITY = 0.2           # 중력 계수
-FRICTION = 0.99         # 마찰 계수
-AIR_RESISTANCE = 0.995  # 공기 저항 계수
-WIND_FORCE = 0.08       # 바람 세기
-WIND_DIRECTION_CHANGE_PROB = 0.01  # 바람 방향 변화 확률
-TURBULENCE_STRENGTH = 0.1  # 난류 강도
+CONTAINER_RADIUS = 300            # 로또 통의 반지름 (픽셀)
+BALL_RADIUS = 15                  # 로또 공의 반지름 (픽셀)
+BALL_COUNT = 45                   # 로또 공의 개수 (표준 로또 번호 개수)
+GRAVITY = 9.81                    # 중력 계수 (중력 가속도)
+FRICTION = 0.05                   # 마찰 계수 (0~1 범위, 픽셀 충돌 시 감속 정도)
+AIR_RESISTANCE = 0.02             # 공기 저항 계수 (0~1 범위, 공기 저항 정도)
+WIND_FORCE = 1.5                  # 바람 세기 (상대적인 단위, 임의 조정 가능)
+WIND_DIRECTION_CHANGE_PROB = 0.1  # 바람 방향 변화 확률 (매 시간 간격마다 방향 변경 확률)
+TURBULENCE_STRENGTH = 0.3         # 난류 강도 (상대적 강도, 무작위성 증가)
 
 # 추첨 관련 변수
 DRAW_INTERVAL = 3000    # 추첨 간격 (밀리초)
